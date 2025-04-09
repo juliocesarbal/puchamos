@@ -1,3 +1,10 @@
+let sectionSeleccionarAtaque = document.getElementById('seleccionar-ataque')
+let sectionReiniciar = document.getElementById('reiniciar')
+let botonMascotaJugador = document.getElementById('boton-mascota')
+let botonFuego = document.getElementById('boton-fuego')
+let botonAgua = document.getElementById('boton-agua')
+let botonTierra = document.getElementById('boton-tierra')
+let botonReiniciar = document.getElementById('boton-reiniciar')
 let ataqueJugador
 let ataqueEnemigo
 let pokemonJugador
@@ -6,23 +13,13 @@ let vidasJugador = 100;
 let vidasEnemigo = 100;
 
 function iniciarJuego() {
-    let sectionSeleccionarAtaque = document.getElementById('seleccionar-ataque')
-    sectionSeleccionarAtaque.style.display = 'none'
-
-    let sectionReiniciar = document.getElementById('reiniciar')
-    sectionReiniciar.style.display = 'none'
     
-    let botonMascotaJugador = document.getElementById('boton-mascota')
+    sectionSeleccionarAtaque.style.display = 'none'
+    sectionReiniciar.style.display = 'none'
     botonMascotaJugador.addEventListener('click', seleccionarMascotaJugador)
-
-    let botonFuego = document.getElementById('boton-fuego')
     botonFuego.addEventListener('click', ataqueFuego)
-    let botonAgua = document.getElementById('boton-agua')
     botonAgua.addEventListener('click', ataqueAgua)
-    let botonTierra = document.getElementById('boton-tierra')
     botonTierra.addEventListener('click', ataqueTierra)
-
-    let botonReiniciar = document.getElementById('boton-reiniciar')
     botonReiniciar.addEventListener('click', reiniciarJuego)
 }
 
