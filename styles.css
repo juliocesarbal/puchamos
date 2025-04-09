@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rowdies:wght@300;400;700&display=swap');
+
+body{
+    font-family: "Rowdies", sans-serif;
+    background-color: beige;
+    font-size:large;
+}
+
+#seleccionar-mascota
+{
+    font-size:large;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    font-size: 60px;
+    margin: 20px;
+    margin-top: 30px;
+    box-sizing: border-box;
+}
+
+.subtitulo{
+    color: black;
+    font-size: 30px;
+}
+
+.tarjetas {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center; 
+    gap: 20px; 
+}
+
+
+.tarjeta-de-mokepon {
+    width: 200px; 
+    height: 100px; 
+    background-color: #F2E2B1;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta-de-mokepon img {
+    width: 80px;
+}
+
+input{
+    display: none;
+}
+
+#boton-mascota{
+    font-family: "Poppins", sans-serif;
+    padding: 10px;
+    font-size: large;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+#seleccionar-ataque{
+    margin-top: 30px;
+    height: 50vh;
+    flex-direction: column;
+    align-items: center;
+}
+#ataques{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.boton-de-ataque{
+    justify-content: center;
+    background-color: bisque;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: "Rowdies", sans-serif;
+}
+
+#capsulas{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+
+#yo, #enemigo {
+    text-align: center;
+    width: 250px;
+    background-color: bisque;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 30px;
+    justify-self: center;
+}
+#Final {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 20px;
+    font-size: x-large;
+}
+#reiniciar,#boton-reiniciar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: "Rowdies", sans-serif;
+}
+#Imag{
+    display: flex;
+    flex-direction:row;
+    gap: 75px;
+}
+
+.input:checked + .label {
+    background-color: #D5C7A3;
+}
+
+.input:hover + .label{
+    background-color: #D5C7A3;
+}
+
+@media(max-width: 480px)
+{
+    #body{
+        margin-top: 10vh;
+    }
+    .tarjetas{
+        display: flex;
+        flex-direction: column; 
+        justify-content: center; 
+        gap: 20px; 
+    }
+    #seleccionar-ataque{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #capsulas{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        justify-content: center;
+    }
+    #Imag{
+        display: flex;
+        flex-direction:row;
+        gap: 20px;
+        box-sizing:content-box ;
+    }
+    #Jugador,#Enemigo{
+        width: 150px;
+        height: 110px;
+    }
+}

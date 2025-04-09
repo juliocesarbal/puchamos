@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>MOKEPON!</title>
+        <script src="./js/mokepon.js"></script>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <section id="seleccionar-mascota">
+            <h1 class="titulo">Pokemon</h1>
+
+            <h2 class="subtitulo">Elige tu mascota:</h2>
+
+            <div class="tarjetas">
+                <input type="radio" name="mascota" id="charmander" class="input" />
+                <label class="label tarjeta-de-mokepon" for="charmander">
+                    <p>Charmander</p>
+                    <img src="./assets/charmander.png" alt="charmander">
+                </label>
+
+                <input type="radio" name="mascota" id="bulbasur" class="input" />
+                <label class="label tarjeta-de-mokepon" for="bulbasur">
+                    <p>Bulbasur</p>
+                    <img src="./assets/bulbasur.png" alt="bulbasur">
+                </label>
+
+                <input type="radio" name="mascota" id="squirtle" class="input" />
+                <label class="label tarjeta-de-mokepon" for="squirtle">
+                    <p>Squirtle</p>
+                    <img src="./assets/squirtle.png" alt="squirtle">
+                </label>
+            </div>
+        
+            <button id="boton-mascota">Seleccionar</button>
+
+        </section>
+
+        <section id="seleccionar-ataque">
+            <h1 class="titulo">Pokemon</h1>
+
+            <h2 class="subtitulo">Elige tu ataque:</h2>
+
+            <div id="Imag">
+                    <img src=""  id="Jugador"  width = 475px height = 350px> 
+                    <img src="" id="Enemigo" width = 475px height = 350px>
+            </div>
+
+            <div id="ataques">
+                <button id="boton-fuego" class="boton-de-ataque">Fuego 🔥</button>
+                <button id="boton-agua" class="boton-de-ataque">Agua 💧</button>
+                <button id="boton-tierra"class="boton-de-ataque">Tierra 🌱</button>
+            </div>
+
+            <div id = "Final">
+                <section id="mensajes">
+
+                </section>
+    
+                <section id="reiniciar">
+                <button id="boton-reiniciar">Reiniciar</button>
+                </section>
+            </div>
+            <div id="capsulas">
+                <div id ="yo">
+                    <p> <span id="vidas-jugador">3</span> ❤️  </p> 
+                    <p> Jugador: <span id="mascota-jugador"></span>  </p>
+
+                </div>   
+                <div id ="enemigo">
+                    <p> <span id="vidas-enemigo">3</span> ❤️  </p> 
+                    <p> Enemigo: <span id="mascota-enemigo"> </span>  </p>
+                    
+                </div>   
+            </div>
+            
+        </section>
+
+        
+    </body>
+</html>
