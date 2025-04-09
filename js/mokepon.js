@@ -5,15 +5,23 @@ let botonFuego = document.getElementById('boton-fuego')
 let botonAgua = document.getElementById('boton-agua')
 let botonTierra = document.getElementById('boton-tierra')
 let botonReiniciar = document.getElementById('boton-reiniciar')
+let sectionSeleccionarMascota = document.getElementById('seleccionar-mascota')
+let imgJugador = document.getElementById("Jugador")
+let inputCharmander = document.getElementById('charmander')
+let inputBulbasur = document.getElementById('bulbasur')
+let inputSquirtle = document.getElementById('squirtle')
+let spanMascotaJugador = document.getElementById('mascota-jugador')
+let imgEnemigo = document.getElementById("Enemigo")
+let spanMascotaEnemigo = document.getElementById('mascota-enemigo')
+
 let ataqueJugador
 let ataqueEnemigo
 let pokemonJugador
 let pokemonEnemigo
-let vidasJugador = 100;
-let vidasEnemigo = 100;
+let vidasJugador = 3;
+let vidasEnemigo = 3;
 
 function iniciarJuego() {
-    
     sectionSeleccionarAtaque.style.display = 'none'
     sectionReiniciar.style.display = 'none'
     botonMascotaJugador.addEventListener('click', seleccionarMascotaJugador)
@@ -24,19 +32,9 @@ function iniciarJuego() {
 }
 
 function seleccionarMascotaJugador() {
-    let sectionSeleccionarMascota = document.getElementById('seleccionar-mascota')
-    sectionSeleccionarMascota.style.display = 'none'
-    
-    let sectionSeleccionarAtaque = document.getElementById('seleccionar-ataque')
-    sectionSeleccionarAtaque.style.display = 'flex'
 
-    let imgJugador = document.getElementById("Jugador")
-    
-    
-    let inputCharmander = document.getElementById('charmander')
-    let inputBulbasur = document.getElementById('bulbasur')
-    let inputSquirtle = document.getElementById('squirtle')
-    let spanMascotaJugador = document.getElementById('mascota-jugador')
+    sectionSeleccionarMascota.style.display = 'none'
+    sectionSeleccionarAtaque.style.display = 'flex'
     
     if (inputCharmander.checked) {
         spanMascotaJugador.innerHTML = 'Charmander'
@@ -58,10 +56,7 @@ function seleccionarMascotaJugador() {
 }
 
 function seleccionarMascotaEnemigo() {
-    let imgEnemigo = document.getElementById("Enemigo")
-
     let mascotaAleatoria = aleatorio(1,3)
-    let spanMascotaEnemigo = document.getElementById('mascota-enemigo')
 
     if ((mascotaAleatoria == 1) && (pokemonJugador != "Charmander")) {
         spanMascotaEnemigo.innerHTML = 'Charmander'
